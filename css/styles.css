@@ -1,0 +1,45 @@
+/* Оглавление */
+/* Webstudio */
+.mainheader{
+    Font family: Roboto
+Font style: Medium
+Font size: 14px
+Line height: 16px
+Line height: 100%
+Align: Left
+Vertical align: Top
+Letter spacing: 2%
+Fill: Solid}
+.webstudio {
+position: absolute;
+width: 145px;
+height: 31px;
+left: 215px;
+top: 24px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;    
+letter-spacing: 0.03em;}
+.web {
+color: #2196F3;}
+.studio {
+color: #000000;}
+.studia {
+width: 49px;
+height: 16px;
+left: 438px;
+top: 29px;
+color: #2196F3;}
+.header {
+color: #212121
+}
+
+.link {
+    color: teal;
+}
+
+.link:hover {
+    color: tomato;
+}
