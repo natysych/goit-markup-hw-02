@@ -1,9 +1,24 @@
 /* Оглавление */
 /* Webstudio */
+a {
+    text-decoration: none;}
+ul {
+    list-style: none;}
+    body {
+        width: 1170px;
+        left: 215px;
+        right: 215px;}
+
+    .link:hover {color: teal; }
+
 .mainheader{
-    Font family: Roboto
-Font style: Medium
-Font size: 14px
+display: block;
+box-sizing: border-box;
+width: 150px;
+height: 150px;
+padding: 20px;
+font-family: Roboto
+font-size: 14px
 Line height: 16px
 Line height: 100%
 Align: Left
@@ -33,9 +48,66 @@ left: 438px;
 top: 29px;
 color: #2196F3;}
 .header {
-color: #212121
+position: absolute;
+width: 1600px;
+height: 80px;
+left: 0px;
+top: 0px;
+color: #212121}
+.studia {
+    position: absolute;
+        width: 49px;
+        height: 16px;
+        left: 446px;
+        top: 29px;
+        color: #2196F3;
 }
+.portfolio {
+position: absolute;
+    width: 76px;
+    height: 16px;
+    left: 552px;
+    top: 32px;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;}
+
+.contacts {
+    position: absolute;
+        width: 68px;
+        height: 16px;
+        left: 679px;
+        top: 32px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #212121;}
+        
+.headeremail {
+    position: absolute;
+        width: 135px;
+        height: 16px;
+        left: 1078px;
+        top: 32px;
+
+}
+.headertel {
+position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+}
 .link {
     color: teal;
 }
@@ -43,3 +115,100 @@ color: #212121
 .link:hover {
     color: tomato;
 }
+.solution {
+position: absolute;
+width: 1600px;
+height: 600px;
+left: 0px;
+top: 80px;
+background: #2F303A;}
+
+/* Эффективные решения для вашего бизнеса */
+.solution-tytle {
+    position: absolute;
+        width: 696px;
+        height: 120px;
+        left: 452px;
+        top: 280px;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+          
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+            color: #FFFFFF;
+
+    /* Заказать услугу */
+}
+.order-service {
+position: absolute;
+    width: 136px;
+    height: 30px;
+    left: 732px;
+    top: 440px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+/* Стиль кнопки */
+.button {
+    color: 2196F3;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+}
+/* Наши преимущества стили */
+.advantages {
+position: absolute;
+width: 1170px;
+height: 101px;
+left: 215px;
+top: 774px;
+padding-top: 94px;
+}
+.advantagedetails {
+    position: absolute;
+        width: 270px;
+        height: 101px;
+        left: 215px;
+        top: 774px;
+}
+/* Чем мы занимаемся стили */
+.whatwedo {
+position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 969px;
+    padding-top: 94px;
+}
+/* Наша команда - стили */
+.ourteam {
+    position: absolute;
+        width: 1600px;
+        height: 648px;
+        left: 0px;
+        top: 1449px;
+        padding-top: 94px;
+}
+/* Контакты - стили */
+.contacts {
+position: absolute;
+width: 1600px;
+height: 252px;
+left: 0px;
+top: 2097px;}
