@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
+<body> 
 <!-- <body style="font-family: Roboto; background: #E5E5E5;"> -->
     
 <!-- Оглавление -->
@@ -34,7 +35,7 @@
 
     <section class="solution">
         <h1 class="solutiontext">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="buttonservice"><span class="orderservice">Заказать услугу</span></button>
+        <button class="buttonservice" type="button"><span class="orderservice">Заказать услугу</span></button>
 
     </section>
     <!-- Advantages -->
@@ -61,7 +62,8 @@
             </li>
             <li>
                 <h3 class="advantagetechheader">Современные технологии</h3>
-                <p class="advantagetechtext">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <p class="advantagetechtext">Значимость этих проблем настолько <br>
+                    очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
     </section>
@@ -70,53 +72,56 @@
         <h2 class="whatwedoheader">Чем мы занимаемся</h2>
         <ul>
             <li class="picone">
-                <img src="./images/imgpic1.jpg" alt="компьютер" width: 370px/>
+            <img src="./images/imgpic1.jpg" alt="компьютер" width="370px" />
             </li>
             <li class="pictwo">
-            <img src="./images/imgpic2.jpg" alt="мобильный телефон" width: 370px/>
+            <img src="./images/imgpic2.jpg" alt="мобильный телефон" width="370px"/>
             </li>
             <li class="picthree">
-            <img src="./images/imgpic3.jpg" alt="цыетопередача" width: 370px/>
+            <img src="./images/imgpic3.jpg" alt="цыетопередача" width="370px"/>
             </li>
         </ul>
     </section>
     <!-- Наша команда   -->
-            <section>
+            <section class="sectionteam">
                 <h2  class="ourteamheader">Наша команда</h2>
                 <ul>
-                    <li class="idpic">
-                        <img src="./images/imgteam1.jpg" alt="Игорь Демьяненко" width="270" />
-                        <h3>Игорь Демьяненко</h3>
-                        <p lang="en">Product Designer</p>
+                    <li class="pic">
+                        <img class="idpic" src="./images/imgteam1.jpg" alt="Игорь Демьяненко" width="270" />
+                        <h3 class="managerigor">Игорь Демьяненко</h3>
+                        <p class="position" lang="en">Product Designer</p>
                     </li>
-                    <li class="orpic">
-                        <img src="./images/imgteam2.jpg" alt="Ольга Репина" width="270" />
-                        <h3>Ольга Репина</h3>
-                        <p lang="en">Frontend Developer</p>
+                    <li class="pic">
+                        <img class="orpic" src="./images/imgteam2.jpg" alt="Ольга Репина" width="270" />
+                        <h3 class="managerolga">Ольга Репина</h3>
+                        <p class="position" lang="en">Frontend Developer</p>
                     </li>
-                    <li class="ntpic">
-                        <img src="./images/imgteam3.jpg" alt="Николай Тарасов" width="270" />
-                        <h3>Николай Тарасов</h3>
-                        <p lang="en">Marketing</p>
+                    <li class="pic">
+                        <img class="ntpic" src="./images/imgteam3.jpg" alt="Николай Тарасов" width="270" />
+                        <h3 class="managernikolay">Николай Тарасов</h3>
+                        <p class="position" lang="en">Marketing</p>
                     </li>
-                    <li class="mypic">
-                        <img src="./images/imgteam4.jpg" alt="Михаил Ермаков" width="270" />
-                        <h3>Михаил Ермаков</h3>
-                        <p lang="en">UI Designer</p>
+                    <li class="pic">
+                        <img class="mypic" src="./images/imgteam4.jpg" alt="Михаил Ермаков" width="270" />
+                        <h3 class="managermikhail">Михаил Ермаков</h3>
+                        <p class="position" lang="en">UI Designer</p>
                     </li>
                 </ul>
             </section>
         </main>
 
-        <footer>
+        <footer class="footerstyle">
             <!-- Контакты -->
-            <li class="webstudiofooter"><span class="web">Web</span><span class="studio">Studio</span></li>
-            <address class="adress">
-                <ul>
-                    <li>г. Киев, пр-т Леси Украинки, 26</li>
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a href="0991111111">099 111 11 11</a></li>
-                </ul>
+            <ul>
+            <li class="webstudiofooter"><span class="web">Web</span><span class="studiofooter">Studio</span></li>
+            </ul>
+            
+            <address class="adressstyle">
+            <ul>
+            <li>г. Киев, пр-т Леси Украинки, 26</li>
+            <li><a href="mailto:info@example.com">info@example.com</a></li>
+            <li><a href="tel:+380961111111">+38 097 111 11 11</a></li>
+            </ul>
             </address>
         
         </footer>
