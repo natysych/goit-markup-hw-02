@@ -161,8 +161,6 @@ color: #ffffff;
 position: absolute;
 width: 1170px;
 height: 101px;
-left: 215px;
-right: 215px;
 top: 774px;
 } 
 
@@ -172,6 +170,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
+left: 215px;
 color:#757575;
 }
 .advantage-second {
@@ -180,7 +179,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
-left: 300px;
+left: 515px;
 color: #757575;
 }
 .advantage-third {
@@ -189,7 +188,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
-left: 600px;
+left: 815px;
 color: #757575;
 }
 .advantage-forth {
@@ -198,7 +197,8 @@ font-weight: 400;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
-left: 900px;
+width: 270px;
+left: 1115px;
 color: #757575;
 }
 .advantagedetail-header {
@@ -212,12 +212,12 @@ color: #212121;
 position: absolute;
 width: 1170px;
 height: 386px;
-left: 215px;
+/* left: 215px; */
 top: 969px;
 }
 .whatwedoheader {
 height: 42px;
-left: 397px;
+left: 612px;
 position: absolute;
 font-weight: 700;
 font-size: 36px;
@@ -229,19 +229,19 @@ color: #212121;
 .pic-one {
 position: absolute;
 height: 294px;
-left: 0px;
+left: 215px;
 top: 92px;
 }
 .pic-two {
 position: absolute;
 height: 294px;
-left:400px;
+left:615px;
 top: 92px;
 }
 .pic-three {
 position: absolute;
 height: 294px;
-left: 800px;
+left: 1015px;
 top: 92px;
 }
 /* Наша команда - стили */ 
