@@ -4,14 +4,18 @@ ul {list-style: none;}
 
 li {list-style: none;}
 
-.link:hover {color: teal; }
+.studio-link .portfolio-link:hover  {
+     color: teal;
+ }
+.studio-link .portfolio-link:focus  {
+     color: teal;
+ }
 button {cursor: pointer;}
-
 body {
     font-family: roboto;
-    position: relative;
+    color:#000000;
     width: 1600px;
-    height: 2349px;
+    height: 2349px; 
     background: #FFFFFF;
 }
 /* Вся секция - Шапка: */
@@ -22,43 +26,61 @@ left: 0px;
 top: 0px;
 }
 /*Шапка- лого */
-.webstudioheader {
+.webstudio-header {
+font-family: Raleway;
 position: absolute;
-width: 145px;
-height: 31px;
+width: 49px;
+height: 16px;
 left: 215px;
 top: 24px;
-font-family: Raleway;
-font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 }
-.web{
+.studio-header {
+position: absolute;
+left: 453px;
+top: 32px;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+line-height: 16px;
+letter-spacing: 0.02em;
 color: #2196F3;
 }
+.portfolio-header {
+position: absolute;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+left: 552px;
+top: 32px;
+}
+.contacts-header {
+position: absolute;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+left: 679px;
+top: 32px;
+}
+.web {
+color: #2196F3;}
 .studio {
 color: #000000;}
 
 /*Шапка-ссылка "Студия" */
-.studiolink {
-position: absolute;
-width: 49px;
-height: 16px;
-left: 446px;
-top: 29px;
+.studio-link {
 color: #2196F3;
 }
 /*Шапка-ссылка "Портфолио" */
-.portfoliolink {
+.portfolio-link {
 position: absolute;
-width: 76px;
-height: 16px;
 left: 552px;
 top: 32px;
-font-family: Roboto;
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
@@ -68,50 +90,35 @@ color: #212121;
 /* Шапка-блок контакты */
 .contacts {
 position: absolute;
-width: 68px;
-height: 16px;
 left: 679px;
 top: 32px;
-font-family: Roboto;
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 color: #212121;
 }
-   
-.headeremail {
+.header-email {
 position: absolute;
-width: 135px;
-height: 16px;
 left: 1078px;
 top: 32px;
-font-family: Roboto;
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 color: #2196F3;
 }
-.headertel {
+.header-tel {
 position: absolute;
-width: 122px;
-height: 16px;
 left: 1263px;
 top: 32px;
-font-family: Roboto;
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
 letter-spacing: 0.02em;
 color: #757575;
 }
-
 /* <Блок эффективные решения - заказать услугу */
-
 .solution {
 position: absolute;
 width: 1600px;
@@ -121,16 +128,12 @@ top: 80px;
 background: #2F303A;
 }
 
-.solutiontext {
+.solution-text {
 position: absolute;
-width: 696px;
-height: 120px;
 left: 452px;
 right: 452px;
 top: 200px;
 bottom: 280px;
-font-family: Roboto;
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 60px;
@@ -140,173 +143,80 @@ text-transform: uppercase;
 color: #FFFFFF;}
 
 /* Кнопка "Заказать услугу" */
-.buttonservice {
+.button-service {
 position: absolute;
 width: 200px;
 height: 50px;
 left: 700px;
 top: 430px;
+font-weight: 700;
+font-size: 16px;
 background: #2196F3;
 color: #ffffff;
 }
-/* Текст в кнопке "Заказать услугу" */
-.orderservice {
-/* position: absolute;  */
-width: 136px;
-height: 30px;
-left: 732px;
-right: 732px;
-top: 440px;
-height: 30px;
-font-family: Roboto;
-font-size: 16px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: #ffffff;
-}
-
 /* Наши преимущества стили */
 .advantages {
 position: absolute;
-/* width: 1170px;
-height: 101px; */
+width: 1170px;
+height: 101px;
 left: 215px;
+right: 215px;
 top: 774px;
-padding-top: 94px;
 } 
 
-/* Преимущества - заголовок */
-.advantagedetailheader {
+.advantage-first {
 position: absolute;
-width: 270px;
-height: 16px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color:#757575;
+}
+.advantage-second {
+position: absolute;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+left: 300px;
+color: #757575;
+}
+.advantage-third {
+position: absolute;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+left: 600px;
+color: #757575;
+}
+.advantage-forth {
+position: absolute;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+left: 900px;
+color: #757575;
+}
+.advantagedetail-header {
+font-size: 14px;
+line-height: 16px;
+text-transform: uppercase;
+color: #212121;
+}
+
+.whatwedo {
+position: absolute;
+width: 1170px;
+height: 386px;
 left: 215px;
-top: 774px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
-}
-/* Внимательность к деталям */
-.advantagedetailtext {
-position: absolute;
-width: 270px;
-height: 101px;
-left: 215px;
-top: 800px;
-font-family: roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
-}
-/* Пунктуальность */
-.advantagepunctualityheader {
-position: absolute;
-width: 270px;
-height: 16px;
-left: 515px;
-top: 774px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
-}
-.advantagepunctualitytext {
-position: absolute;
-width: 270px;
-height: 101px;
-left: 515px;
-top: 800px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
- color: #757575;
-}
-/* Планирование */
-.advantageplanheader {
-position: absolute;
-width: 270px;
-height: 16px;
-left: 815px;
-top: 774px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
-}
-.advantageplantext {
-position: absolute;
-width: 270px;
-height: 101px;
-left: 815px;
-top: 800px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
-}
-/* Современные технологии */
-.advantagetechheader {
-position: absolute;
-width: 270px;
-height: 16px;
-left: 1115px;
-top: 774px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: #212121;
-}
-.advantagetechtext {
-position: absolute;
-width: 270px;
-height: 101px;
-left: 1115px;
-top: 800px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
-}
-/* Чем мы занимаемся стили */
-.whatwedoheader {
-position: absolute;
-width: 376px;
-height: 42px;
-left: 612px;
 top: 969px;
-font-family: Roboto;
-font-style: normal;
+}
+.whatwedoheader {
+height: 42px;
+left: 397px;
+position: absolute;
 font-weight: 700;
 font-size: 36px;
 line-height: 42px;
@@ -314,146 +224,114 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
-.picone {
+.pic-one {
 position: absolute;
 height: 294px;
-left: 215px;
-top: 1061px;
+left: 0px;
+top: 92px;
 }
-.pictwo {
+.pic-two {
 position: absolute;
 height: 294px;
-left: 615px;
-top: 1061px;
+left:400px;
+top: 92px;
 }
-.picthree {
+.pic-three {
 position: absolute;
 height: 294px;
-left: 1015px;
-top: 1061px;
+left: 800px;
+top: 92px;
 }
-/* Наша команда - стили */
-.sectionteam {
-background-color: #F5F4FA;
-top: 1449px;
-}
-.ourteamheader {
+/* Наша команда - стили */ 
+.section-team {
+background: #F5F4FA;
 position: absolute;
-    width: 264px;
-    height: 42px;
-    left: 668px;
-    top: 1543px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+width: 1600px;
+height: 648px;
+left: 0px;
+top: 1441px;
 }
-.pic {
-    position: absolute;
-    width: 270px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-.position {
-    font-weight: 400;
-    height: 19px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-/* Игорь Демьяненко */
-.idpic {
+.ourteam-header {
 position: absolute;
-left: 215px;
-top: 1635px;
-background: url(4853.jpg);
-border-radius: 0px;
-}
-.managerigor {
-position: absolute;
-height: 19px;
-width: 151px;
-left: 275px;
-top: 1925px;
+left: 668px;
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
 text-align: center;
+letter-spacing: 0.03em;
+}
+
+/* Игорь Демьяненко */
+.pic-demyanenko {
+position: absolute;
+top: 194px;
+height: 260px;
+left: 215px;
+}
+.manager-demyanenko {
+position: absolute;
+top: 484px;
+left: 275px;
+font-weight: 500;
 font-size: 16px;
 line-height: 19px;
+text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+}
+.position-demyanenko {
+position: absolute;
+left: 285px;
+top: 513px;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
 }
 /* Ольга Репина */
-.orpic {
+.pic-repina {
 position: absolute;
-width: 270px;
 height: 260px;
 left: 515px;
-top: 1635px;
-background: url(5844.jpg);
-border-radius: 0px;
+top: 194px;
 }
-.managerolga {
+.manager-repina {
 position: absolute;
-width: 109px;
-height: 19px;
 left: 596px;
-top: 1925px;
-text-align: center;
-font-style: normal;
+top: 484px;
 font-weight: 500;
 font-size: 16px;
 line-height: 19px;
+text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+}
+.position-repina {
+position: absolute;
+width: 147px;
+height: 19px;
+left: 577px;
+top: 513px;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
 }
 /* Николай Тарасов */
-.managernikolay {
+.pic-tarasov {
 position: absolute;
-width: 137px;
-height: 19px;
-left: 882px;
-top: 1925px;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-}
-.ntpic {
-position: absolute;
-width: 270px;
 height: 260px;
 left: 815px;
-top: 1635px;
-background: url(16166.jpg);
-border-radius: 0px;
+top: 194px;
 }
-/* Михаил Ярмаков */
-
-.mypic {
+.manager-tarasov {
 position: absolute;
-width: 270px;
-height: 260px;
-left: 1115px;
-top: 1635px;
-background: url(2968.jpg);
-border-radius: 0px;
-}
-.managermikhail {
-position: absolute;
-width: 134px;
-height: 19px;
-left: 1183px;
-top: 1925px;
-font-style: normal;
+left: 882px;
+top: 484px;
 font-weight: 500;
 font-size: 16px;
 line-height: 19px;
@@ -461,9 +339,50 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 }
-
+.position-tarasov {
+position: absolute;
+left: 912px;
+top: 513px;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* Михаил Ермаков */
+.pic-ermakov {
+position: absolute;
+height: 260px;
+left: 1115px;
+top: 194px;
+}
+.manager-ermakov {
+position: absolute;
+left: 1183px;
+top: 484px;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+.position-ermakov {
+position: absolute;
+width: 87px;
+height: 19px;
+left: 1207px;
+top: 513px;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+}
 /*Футер-Вебстудия */
-.footerstyle {
+.footer {
 position: absolute;
 width: 1600px;
 height: 252px;
@@ -471,11 +390,12 @@ left: 0px;
 top: 2099px;
 background: #2F303A;
 }
-.webstudiofooter {
+.footer-webstudio {
 position: absolute;
 width: 145px;
 height: 31px;
 left: 215px;
+top: 60px;
 font-family: Raleway;
 font-style: normal;
 font-weight: 700;
@@ -483,14 +403,43 @@ font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
 }
-.studiofooter {
+.footer-studio {
 color: #FFFFFF;
 }
 /* Футер- Адрес */
-.adressstyle {
+.footer-adress {
+position: absolute;
 font-style: normal;
-padding-left: 215px;
-padding-top: 22px;
-color: #ffffff;
+left: 215px;
+top: 111px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+/* Футер-имейл */
+.footer-email {
+position: absolute;
+font-style: normal;
+left: 215px;
+top: 141px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+/* Футер-телефон */
+.footer-tel {
+position: absolute;
+font-style: normal;
+left: 215px;
+top: 171px;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
 }
 
