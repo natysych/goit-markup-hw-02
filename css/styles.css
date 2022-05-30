@@ -3,9 +3,14 @@ a { text-decoration: none;}
 ul {list-style: none;}
 
 li {list-style: none;}
+
+:root {
+    --weblogo-color: #2196F3;
+    --text-color: #000000;
+}
 body {
     font-family: roboto;
-    color: #000000;
+    color: var(--text-color);
     width: 1600px;
     height: 2349px;
     background: #FFFFFF;}
@@ -48,7 +53,7 @@ letter-spacing: 0.03em;
 position: absolute;
 left: 453px;
 top: 32px;
-color: #2196F3;
+color: var(--weblogo-color);
 }
 .header-portfolio {
 position: absolute;
@@ -61,13 +66,13 @@ left: 679px;
 top: 32px;}
 
 .web {
-color: #2196F3;}
+color: var(--weblogo-color);}
 
 .header-email {
 position: absolute;
 left: 1078px;
 top: 32px;
-color: #2196F3;}
+color: var(--weblogo-color);}
 
 .header-tel {
 position: absolute;
