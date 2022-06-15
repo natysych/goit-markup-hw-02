@@ -7,345 +7,158 @@ li {list-style: none;}
 :root {
     --weblogo-color: #2196F3;
     --text-color: #000000;
+    --background:#FFFFFF;
+    --portcontacts-color: #212121;
+    --tel-color:  #757575;
+    --solutionbackground-color: #2F303A;
+    
 }
 body {
-    font-family: roboto;
+    font-family: roboto sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.03em;
     color: var(--text-color);
-    width: 1600px;
-    height: 2349px;
-    background: #FFFFFF;}
+    background: var(--background);}
 
 button {cursor: pointer;}
 
+.footer .email:hover {
+    color: teal;
+}
+.header-studio:active
+.header-studio:hover {
+    color: teal;
+}
+
+.footer .email:focus {
+    color: teal;
+}
 /* Вся секция - Шапка: */
-.header-studio .header-portfolio:hover {
-    color: teal;}
-.header-studio .header-portfolio:focus {
-    color: teal;}
-.header-studio .header-portfolio:active {
-    color: red;}
 
 .header {
-width: 1600px;
-height: 80px;
-left: 0px;
-top: 0px;
-color: #212121;
-font-size: 14px;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;}
+letter-spacing: 0.02em;
+color: var(--portcontacts-color);}
 
 /*Шапка- лого */
-.header-webstudio {
-position: absolute;
+.web {
 font-family: Raleway;
-width: 49px;
-height: 16px;
-left: 215px;
-top: 24px;
-font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
+color: var(--weblogo-color)
+}
+.studio {
+font-family: Raleway;
+font-size: 26px;
+line-height: 1.19;
 }
 .header-studio {
-position: absolute;
-left: 453px;
-top: 32px;
-color: var(--weblogo-color);
+color: var(--weblogo-color) ;
 }
-.header-portfolio {
-position: absolute;
-left: 552px;
-top: 32px;}
 
-.header-contacts {
-position: absolute;
-left: 679px;
-top: 32px;}
-
-.web {
+.header .email {
 color: var(--weblogo-color);}
 
-.header-email {
-position: absolute;
-left: 1078px;
-top: 32px;
-color: var(--weblogo-color);}
-
-.header-tel {
-position: absolute;
-left: 1263px;
-top: 32px;
-color: #757575;
+.header .tel {
+color: var(--tel-color);
 }
-/* <Блок эффективные решения - заказать услугу */
+/* Блок эффективные решения - заказать услугу */
 .solution {
-position: absolute;
-width: 1600px;
-height: 600px;
-left: 0px;
-top: 80px;
-background: #2F303A;
+background: var(--solutionbackground-color);
 }
 
 .solution-text {
-position: absolute;
-left: 452px;
-right: 452px;
-top: 200px;
-bottom: 280px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #FFFFFF;}
+color: var(--background);
+}
 
 /* Кнопка "Заказать услугу" */
 .button-service {
-position: absolute;
-width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
 font-weight: 700;
 font-size: 16px;
-background: #2196F3;
-color: #ffffff;
+background: var(--weblogo-color);
+color: var(--background);
 }
 /* Наши преимущества стили */
 .advantages {
-position: absolute;
-width: 1170px;
-height: 101px;
-top: 774px;
-font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
-line-height: 1.71;
+color: #757575;
 } 
-.advantage-first {
-position: absolute;
-letter-spacing: 0.03em;
-left: 215px;
-color:#757575;
-}
-.advantage-second {
-position: absolute;
-left: 515px;
-color: #757575;
-}
-.advantage-third {
-position: absolute;
-left: 815px;
-color: #757575;
-}
-.advantage-forth {
-position: absolute;
-width: 270px;
-left: 1115px;
-color: #757575;
-}
+
 .advantagedetail-header {
 line-height: 1.14;
 text-transform: uppercase;
-color: #212121;
-}
+color: #212121;}
 
-.whatwedo {
-position: absolute;
-width: 1170px;
-height: 386px;
-top: 969px;
-}
 .whatwedoheader {
-height: 42px;
-left: 612px;
-position: absolute;
-font-weight: 700;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-}
-.pic-one {
-position: absolute;
-height: 294px;
-left: 215px;
-top: 92px;
-}
-.pic-two {
-position: absolute;
-height: 294px;
-left:615px;
-top: 92px;
-}
-.pic-three {
-position: absolute;
-height: 294px;
-left: 1015px;
-top: 92px;
-}
+color: #212121;}
+
 /* Наша команда - стили */ 
 .section-team {
 background: #F5F4FA;
-position: absolute;
-width: 1600px;
-height: 648px;
-left: 0px;
-top: 1441px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
-letter-spacing: 0.03em;
 }
+
 .ourteam-header {
-position: absolute;
-left: 668px;
-font-weight: 700;
 font-size: 36px;
 line-height: 1.16px;}
 
 /* Стиль секции с тенью */
 .team-style {
-background: #FFFFFF;
 box-shadow: 
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;}
 
-/* Игорь Демьяненко */
-.pic-demyanenko {
-position: absolute;
-top: 194px;
-height: 260px;
-left: 215px;}
-
-.manager-demyanenko {
-position: absolute;
-top: 484px;
-left: 275px;
+.manager {
 color: #212121;
 }
-.position-demyanenko {
-position: absolute;
-left: 285px;
-top: 513px;
-font-weight: 400;
+.position {
 color: #757575;
 }
-/* Ольга Репина */
-.pic-repina {
-position: absolute;
-height: 260px;
-left: 515px;
-top: 194px;
-}
-.manager-repina {
-position: absolute;
-left: 596px;
-top: 484px;
-color: #212121;
-}
-.position-repina {
-position: absolute;
-left: 577px;
-top: 513px;
-font-weight: 400;
-color: #757575;
-}
-/* Николай Тарасов */
-.pic-tarasov {
-position: absolute;
-height: 260px;
-left: 815px;
-top: 194px;
-}
-.manager-tarasov {
-position: absolute;
-left: 882px;
-top: 484px;
-color: #212121;}
-
-.position-tarasov {
-position: absolute;
-left: 912px;
-top: 513px;
-font-weight: 400;
-color: #757575;}
-/* Михаил Ермаков */
-.pic-ermakov {
-position: absolute;
-height: 260px;
-left: 1115px;
-top: 194px;}
-.manager-ermakov {
-position: absolute;
-left: 1183px;
-top: 484px;
-color: #212121;}
-
-.position-ermakov {
-position: absolute;
-left: 1207px;
-top: 513px;
-font-weight: 400;
-color: #757575;}
 
 /*Футер-Вебстудия */
+address {
+font-style: normal;
+}
 .footer {
-position: absolute;
-width: 1600px;
-height: 252px;
-left: 0px;
-top: 2097px;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
 line-height: 1.71;
-letter-spacing: 0.03em;
-background: #2F303A;}
+background: var(--solutionbackground-color);}
 
-.footer-webstudio {
-position: absolute;
-left: 215px;
-top: 60px;
-font-family: Raleway;
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;}
-
-.footer-studio {
-color: #FFFFFF;}
 
 /* Футер- Адрес */
 .footer-adress {
-position: absolute;
-font-style: normal;
-left: 215px;
-top: 111px;
-color: #FFFFFF;}
+color: var(--background);
+}
 
 /* Футер-имейл */
-.footer-email {
-position: absolute;
-left: 215px;
-top: 141px;
-color: rgba(255, 255, 255, 0.6);
+.footer .email, .tel  {
+color: #757575;
 }
-/* Футер-телефон */
-.footer-tel {
-position: absolute;
-left: 215px;
-top: 171px;
-color: rgba(255, 255, 255, 0.6);
+
+/* Стили для потрфолио */
+.vse {
+font-size: 16px;
+color: var(--background);
+background-color: var(--weblogo-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
-/* Страница Портфолио */
+.button-other {
+font-size: 16px;;
+color: #212121;
+background: #F5F4FA;
+border-radius: 4px;
+}
