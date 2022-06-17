@@ -1,17 +1,14 @@
 a { text-decoration: none;}
-
 ul {list-style: none;}
-
 li {list-style: none;}
-
 :root {
     --weblogo-color: #2196F3;
     --text-color: #000000;
     --background:#FFFFFF;
     --portcontacts-color: #212121;
     --tel-color:  #757575;
+    --sectionbackgroung: #F5F4FA;
     --solutionbackground-color: #2F303A;
-    
 }
 body {
     font-family: roboto sans-serif;
@@ -21,20 +18,30 @@ body {
     color: var(--text-color);
     background: var(--background);}
 
-button {cursor: pointer;}
 
-.footer .email:hover {
-    color: teal;
-}
-.header-studio:active
-.header-studio:hover {
-    color: teal;
-}
-
-.footer .email:focus {
-    color: teal;
-}
 /* Вся секция - Шапка: */
+.header-studio:active {
+    color: red;
+}
+.header-studio:current {
+    color: red;}
+
+.header-studio:hover {
+    background: teal;}
+
+.header-portfolio:current {
+    color: red;}
+
+.header-portfolio:focus {
+    color: red;}
+
+.header-portfolio:hover {
+    color: teal;}
+.email:hover {
+    color: teal;
+}
+.email:focus {
+    color: teal;}
 
 .header {
 letter-spacing: 0.02em;
@@ -56,10 +63,13 @@ line-height: 1.19;
 color: var(--weblogo-color) ;
 }
 
-.header .email {
+.studio.footer {
+color: var(--background);
+}
+.email {
 color: var(--weblogo-color);}
 
-.header .tel {
+.tel {
 color: var(--tel-color);
 }
 /* Блок эффективные решения - заказать услугу */
@@ -68,7 +78,6 @@ background: var(--solutionbackground-color);
 }
 
 .solution-text {
-font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
@@ -76,39 +85,42 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--background);
 }
-
 /* Кнопка "Заказать услугу" */
-.button-service {
-font-weight: 700;
+button { cursor: pointer;}
+.button {
 font-size: 16px;
 background: var(--weblogo-color);
 color: var(--background);
+border: 1px solid var(--text-color);
+width: 200px;
+padding: 10px 32px;
+align-items: center;
+text-align: center;
 }
 /* Наши преимущества стили */
 .advantages {
 line-height: 1.71;
-color: #757575;
+color: var(--tel-color);
 } 
 
-.advantagedetail-header {
+.advantage-header {
 line-height: 1.14;
 text-transform: uppercase;
-color: #212121;}
+color: var(--portcontacts-color);}
 
 .whatwedoheader {
 font-size: 36px;
 line-height: 42px;
 text-align: center;
-color: #212121;}
+color: var(--portcontacts-color);}
 
 /* Наша команда - стили */ 
 .section-team {
-background: #F5F4FA;
+background: var(--sectionbackgroung);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
-text-align: center;
-}
+text-align: center;}
 
 .ourteam-header {
 font-size: 36px;
@@ -123,30 +135,28 @@ box-shadow:
 border-radius: 0px 0px 4px 4px;}
 
 .manager {
-color: #212121;
-}
+color: var(--portcontacts-color);}
+
 .position {
-color: #757575;
-}
+color: var(--tel-color);}
 
 /*Футер-Вебстудия */
-address {
-font-style: normal;
-}
 .footer {
-line-height: 1.71;
-background: var(--solutionbackground-color);}
-
+    line-height: 1.71;
+    background: var(--solutionbackground-color);}
 
 /* Футер- Адрес */
-.footer-adress {
-color: var(--background);
-}
+address {
+    font-style: normal;}
+.address {
+color: var(--background);}
 
 /* Футер-имейл */
-.footer .email, .tel  {
-color: #757575;
-}
+.email.footer {
+color: var(--tel-color);}
+
+.tel.footer {
+    color: var(--tel-color);}
 
 /* Стили для потрфолио */
 .vse {
@@ -158,7 +168,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 }
 .button-other {
 font-size: 16px;;
-color: #212121;
-background: #F5F4FA;
-border-radius: 4px;
-}
+color: var(--portcontacts-color);
+background: var(--sectionbackgroung);
+border-radius: 4px;}
