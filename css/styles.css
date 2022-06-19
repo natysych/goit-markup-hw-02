@@ -11,67 +11,57 @@ li {list-style: none;}
     --solutionbackground-color: #2F303A;
 }
 body {
-    font-family: roboto sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 14px;
     font-style: normal;
     letter-spacing: 0.03em;
     color: var(--text-color);
     background: var(--background);}
 
-
 /* Вся секция - Шапка: */
-.header-studio:active {
-    color: red;
-}
-.header-studio:current {
-    color: red;}
 
-.header-studio:hover {
-    background: teal;}
+.current {
+    color: var(--weblogo-color);}
 
-.header-portfolio:current {
-    color: red;}
+.href:focus {
+    color:var(--weblogo-color);}
 
-.header-portfolio:focus {
-    color: red;}
+.href:hover {
+    color: var(--weblogo-color)}
 
-.header-portfolio:hover {
-    color: teal;}
 .email:hover {
-    color: teal;
+    color: var(--weblogo-color);
 }
 .email:focus {
-    color: teal;}
+    color: var(--weblogo-color)}
 
 .header {
 letter-spacing: 0.02em;
 color: var(--portcontacts-color);}
 
 /*Шапка- лого */
+.webstudio {
+font-family: Raleway;
+font-size: 26px;
+line-height: 1.19;
+}
 .web {
-font-family: Raleway;
-font-size: 26px;
-line-height: 1.19;
-color: var(--weblogo-color)
-}
-.studio {
-font-family: Raleway;
-font-size: 26px;
-line-height: 1.19;
-}
-.header-studio {
-color: var(--weblogo-color) ;
-}
+color: var(--weblogo-color)}
 
-.studio.footer {
-color: var(--background);
-}
+.studio {
+color: var(--background);}
+
 .email {
 color: var(--weblogo-color);}
 
-.tel {
-color: var(--tel-color);
+.tel:hover{
+color: var(--weblogo-color);}
+.tel:focus {
+    color: var(--weblogo-color);
 }
+.tel {
+color: var(--tel-color);}
+
 /* Блок эффективные решения - заказать услугу */
 .solution {
 background: var(--solutionbackground-color);
@@ -86,31 +76,36 @@ text-transform: uppercase;
 color: var(--background);
 }
 /* Кнопка "Заказать услугу" */
-button { cursor: pointer;}
+
+button { 
+    cursor: pointer;}
+
 .button {
 font-size: 16px;
 background: var(--weblogo-color);
 color: var(--background);
 border: 1px solid var(--text-color);
-width: 200px;
 padding: 10px 32px;
 align-items: center;
 text-align: center;
-}
+letter-spacing: 0.06em;
+font-weight: 700;
+line-height: 1.62;}
+
 /* Наши преимущества стили */
 .advantages {
 line-height: 1.71;
-color: var(--tel-color);
-} 
+color: var(--tel-color);} 
 
 .advantage-header {
 line-height: 1.14;
+font-size: 14px;
 text-transform: uppercase;
 color: var(--portcontacts-color);}
 
 .whatwedoheader {
 font-size: 36px;
-line-height: 42px;
+line-height: 1.16;
 text-align: center;
 color: var(--portcontacts-color);}
 
@@ -124,7 +119,7 @@ text-align: center;}
 
 .ourteam-header {
 font-size: 36px;
-line-height: 1.16px;}
+line-height: 1.16;}
 
 /* Стиль секции с тенью */
 .team-style {
@@ -135,10 +130,14 @@ box-shadow:
 border-radius: 0px 0px 4px 4px;}
 
 .manager {
-color: var(--portcontacts-color);}
+color: var(--portcontacts-color);
+font-size: 16px;
+line-height: 1.19;}
 
 .position {
-color: var(--tel-color);}
+color: var(--tel-color);
+font-size: 16px;
+line-height: 1.19;}
 
 /*Футер-Вебстудия */
 .footer {
@@ -152,22 +151,52 @@ address {
 color: var(--background);}
 
 /* Футер-имейл */
+.email.footer:hover{
+color: var(--weblogo-color);
+}
+.email.footer:focus {
+    color: var(--weblogo-color);
+}
 .email.footer {
 color: var(--tel-color);}
 
+.email.footer {
+color: var(--tel-color);}
+
+.tel.footer:hover {
+    color: var(--weblogo-color);
+}
+.tel.footer:focus {
+    color: var(--weblogo-color);
+}
 .tel.footer {
     color: var(--tel-color);}
 
 /* Стили для потрфолио */
 .vse {
 font-size: 16px;
+line-height: 1.63;
+text-align: center;
+letter-spacing: 0.03em;
 color: var(--background);
 background-color: var(--weblogo-color);
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+mix-blend-mode: multiply;
+box-shadow: var(--weblogo-color);
     border-radius: 4px;
-}
+border: none;
+padding: 6px 22px;}
+
 .button-other {
-font-size: 16px;;
+font-size: 16px;
+line-height: 1.63;
+text-align: center;
+letter-spacing: 0.03em;
 color: var(--portcontacts-color);
 background: var(--sectionbackgroung);
-border-radius: 4px;}
+border: none;
+padding: 6px 22px;}
+
+.href.current {
+color: var(--weblogo-color);
+}
+
