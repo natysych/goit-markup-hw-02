@@ -13,7 +13,6 @@ li {list-style: none;}
 body {
     font-family: Roboto, sans-serif;
     font-size: 14px;
-    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--text-color);
     background: var(--background);}
@@ -49,10 +48,13 @@ line-height: 1.19;
 color: var(--weblogo-color)}
 
 .studio {
-color: var(--background);}
+color: var(--text-color);}
 
+.studio >footer {
+    color: var(--text-color);
+}
 .email {
-color: var(--weblogo-color);}
+color: var(--tel-color);}
 
 .tel:hover{
 color: var(--weblogo-color);}
@@ -64,8 +66,7 @@ color: var(--tel-color);}
 
 /* Блок эффективные решения - заказать услугу */
 .solution {
-background: var(--solutionbackground-color);
-}
+background: var(--solutionbackground-color);}
 
 .solution-text {
 font-size: 44px;
@@ -80,7 +81,7 @@ color: var(--background);
 button { 
     cursor: pointer;}
 
-.button {
+.button-orderservice {
 font-size: 16px;
 background: var(--weblogo-color);
 color: var(--background);
@@ -112,9 +113,9 @@ color: var(--portcontacts-color);}
 /* Наша команда - стили */ 
 .section-team {
 background: var(--sectionbackgroung);
-font-weight: 500;
+/* font-weight: 400;
 font-size: 16px;
-line-height: 1.18;
+line-height: 1.18; */
 text-align: center;}
 
 .ourteam-header {
@@ -132,48 +133,45 @@ border-radius: 0px 0px 4px 4px;}
 .manager {
 color: var(--portcontacts-color);
 font-size: 16px;
-line-height: 1.19;}
+font-weight: 500;
+line-height: 1.18;
+letter-spacing: 0.03;}
 
 .position {
 color: var(--tel-color);
 font-size: 16px;
-line-height: 1.19;}
+line-height: 1.17;
+letter-spacing: 0.03;}
 
 /*Футер-Вебстудия */
 .footer {
     line-height: 1.71;
     background: var(--solutionbackground-color);}
-
+.studiofooter {
+    color: var(--background);
+}
 /* Футер- Адрес */
 address {
     font-style: normal;}
 .address {
-color: var(--background);}
-
-/* Футер-имейл */
-.email.footer:hover{
-color: var(--weblogo-color);
-}
-.email.footer:focus {
-    color: var(--weblogo-color);
-}
-.email.footer {
 color: var(--tel-color);}
-
-.email.footer {
-color: var(--tel-color);}
-
-.tel.footer:hover {
-    color: var(--weblogo-color);
-}
-.tel.footer:focus {
-    color: var(--weblogo-color);
-}
-.tel.footer {
-    color: var(--tel-color);}
 
 /* Стили для потрфолио */
-.vse {
+
+.button-vse:hover {
+background-color: var(--sectionbackgroung);
+color: var(--text-color);}
+.button-vse:focus {
+color: var(--text-color);}
+
+.button-other:hover {
+background: var(--weblogo-color);
+color: var(--background);}
+
+.button-other:focus {
+background: var(--weblogo-color);
+color: var(--weblogo-color);}
+.button-vse {
 font-size: 16px;
 line-height: 1.63;
 text-align: center;
@@ -182,7 +180,7 @@ color: var(--background);
 background-color: var(--weblogo-color);
 mix-blend-mode: multiply;
 box-shadow: var(--weblogo-color);
-    border-radius: 4px;
+border-radius: 4px;
 border: none;
 padding: 6px 22px;}
 
@@ -193,10 +191,18 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--portcontacts-color);
 background: var(--sectionbackgroung);
+border-radius: 4px;
 border: none;
 padding: 6px 22px;}
 
 .href.current {
-color: var(--weblogo-color);
-}
+color: var(--weblogo-color);}
 
+.work-name {
+Font-size: 18px;
+line-height: 2;}
+
+.work-type {
+Font-style: Regular;
+Font-size: 16px;
+color: var(--tel-color);}
