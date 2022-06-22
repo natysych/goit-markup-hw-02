@@ -22,27 +22,26 @@ body {
 .current {
     color: var(--weblogo-color);}
 
-.href:focus {
+.href:focus, .href:hover {
     color:var(--weblogo-color);}
 
-.href:hover {
-    color: var(--weblogo-color)}
-
-.email:hover {
+.email:hover, .email:focus {
     color: var(--weblogo-color);
 }
-.email:focus {
-    color: var(--weblogo-color)}
-
-.header {
+.href {
+font-weight: 500;
 letter-spacing: 0.02em;
-color: var(--portcontacts-color);}
+line-height: 1.14;
+color: var(--portcontacts-color);
+}
 
 /*Шапка- лого */
 .webstudio {
 font-family: Raleway;
+font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
+letter-spacing: 00.03em;
 }
 .web {
 color: var(--weblogo-color)}
@@ -53,16 +52,17 @@ color: var(--text-color);}
 .studio >footer {
     color: var(--text-color);
 }
-.email {
-color: var(--tel-color);}
+.contacts {
+color: var(--tel-color);
+letter-spacing: 0.02em;
+line-height: 1.14;
+}
 
-.tel:hover{
+.contacts:hover{
 color: var(--weblogo-color);}
-.tel:focus {
+.contacts:focus {
     color: var(--weblogo-color);
 }
-.tel {
-color: var(--tel-color);}
 
 /* Блок эффективные решения - заказать услугу */
 .solution {
@@ -70,6 +70,7 @@ background: var(--solutionbackground-color);}
 
 .solution-text {
 font-size: 44px;
+font-weight: 900;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
@@ -135,13 +136,13 @@ color: var(--portcontacts-color);
 font-size: 16px;
 font-weight: 500;
 line-height: 1.18;
-letter-spacing: 0.03;}
+letter-spacing: 0.03em;}
 
 .position {
 color: var(--tel-color);
 font-size: 16px;
 line-height: 1.17;
-letter-spacing: 0.03;}
+letter-spacing: 0.03em;}
 
 /*Футер-Вебстудия */
 .footer {
@@ -152,9 +153,18 @@ letter-spacing: 0.03;}
 }
 /* Футер- Адрес */
 address {
-    font-style: normal;}
+font-style: normal;}
 .address {
-color: var(--tel-color);}
+color: var(--background);
+line-height: 1.71;
+}
+.contacts.footer {
+color: var(--tel-color);
+letter-spacing: 0.03em;
+}
+.contacts.footer:hover {
+    color: var(--weblogo-color);
+}
 
 /* Стили для потрфолио */
 
@@ -164,15 +174,13 @@ color: var(--text-color);}
 .button-vse:focus {
 color: var(--text-color);}
 
-.button-other:hover {
+.button-other:hover, .button-other:focus {
 background: var(--weblogo-color);
 color: var(--background);}
 
-.button-other:focus {
-background: var(--weblogo-color);
-color: var(--weblogo-color);}
 .button-vse {
-font-size: 16px;
+font-size: 16px solid;
+font-weight: 500;
 line-height: 1.63;
 text-align: center;
 letter-spacing: 0.03em;
@@ -185,7 +193,8 @@ border: none;
 padding: 6px 22px;}
 
 .button-other {
-font-size: 16px;
+font-size: 16px solid;
+font-weight: 500;
 line-height: 1.63;
 text-align: center;
 letter-spacing: 0.03em;
@@ -199,10 +208,14 @@ padding: 6px 22px;}
 color: var(--weblogo-color);}
 
 .work-name {
-Font-size: 18px;
+font-size: 18px;
+letter-spacing: 0.06em;
 line-height: 2;}
 
 .work-type {
-Font-style: Regular;
-Font-size: 16px;
+font-style: Regular;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0.03em;
+line-height: 1.87;
 color: var(--tel-color);}
